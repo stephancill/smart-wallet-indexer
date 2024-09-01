@@ -1,9 +1,9 @@
 import { createSchema } from "@ponder/core";
 
 export default createSchema((p) => ({
-  SwapEvent: p.createTable({
+  SmartWalletOwner: p.createTable({
     id: p.string(),
-    recipient: p.hex(),
-    payer: p.hex(),
+    publicKey: p.string(),
+    walletAddress: p.string(),
   }),
 }));
